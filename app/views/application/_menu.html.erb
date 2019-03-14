@@ -1,0 +1,13 @@
+<% full_href = (direct ||= false) ? false : true %>
+<div id="menu">
+  <div class="main">
+    <nav>
+      <a href="<%= '/' + locale.to_s + '/' if full_href %>#approach"><%= t 'menu.approach' %></a>
+      <a href="<%= '/' + locale.to_s + '/' if full_href %>#services"><%= t 'menu.services' %></a>
+      <a href="<%= '/' + locale.to_s + '/' if full_href %>#about-us"><%= t 'menu.about_us' %></a>
+    </nav>
+    <a id="burger-menu"></a>
+    <h1><a href="/<%= locale %>/">The Blooming Lab</a></h1>
+  </div>
+  <div class="space"></div>
+</div>

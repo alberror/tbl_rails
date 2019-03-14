@@ -1,0 +1,427 @@
+//== GLOBAL CLASSES & TAG
+
+.museo
+    font-family: $museo
+
+.circus    
+    font-family: $circus
+
+.lightblue
+    color: $tbl-lightblue
+
+.green
+    color: $tbl-green
+
+.text-container,
+.container.marged
+    padding: $margin-base $padding-base
+    margin: 0 auto
+
+.text-container
+    max-width: 600px + 2 * $padding-base
+
+h2
+    margin: 0 auto $margin-base
+
+    + h3
+        margin-top: - $grid-gutter-width
+
+h3
+    text-transform: uppercase
+    margin: 0 auto $padding-base
+    font-family: $museo
+
+p
+    margin-bottom: 1em
+
+    &:last-of-type
+        margin-bottom: 0
+
+.row
+    > *
+        margin-bottom: $grid-gutter-width
+
+.scroll-y
+    overflow-y: auto
+
+.btn
+    text-transform: uppercase
+    +transition(background-color 300ms ease)
+    line-height: 20px
+    padding: 9px 20px
+
+    &:hover
+        background-color: inherit !important
+        color: inherit !important
+
+.btn-blue
+    +button-variant($tbl-lightblue, $tbl-blue, $tbl-lightblue)
+    
+    &.collapsed
+        color: $tbl-lightblue
+        +button-variant($tbl-blue, $tbl-lightblue, $tbl-lightblue)
+
+.btn-green
+    +button-variant($tbl-green, $tbl-beige, $tbl-green)
+    
+    &.collapsed
+        color: $tbl-beige
+        +button-variant($tbl-beige, $tbl-green, $tbl-green)
+
+.card
+    background-color: $tbl-gray
+    color: $tbl-beige
+    border-radius: $border-radius-base
+    padding: $grid-gutter-width
+
+    p
+        font-size: $font-size-base
+
+    a 
+        color: $tbl-beige
+        text-decoration: none
+        
+        &:hover,
+        &:active
+            color: inherit
+            text-decoration: inherit
+
+//== NO SPAM
+
+span.at::after
+    content: '@'
+
+a
+    &.ns
+        word-spacing: -0.25em
+
+    &[data-mail]
+        display: inline-block
+        cursor: pointer
+
+//== STRUCTURE
+
+html
+    font-size: $font-size-base
+
+body
+    font-weight: 300
+    text-align: center
+    min-width: 320px
+    overflow-x: hidden
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+    > h2
+        background-color: $tbl-blue
+        color: $tbl-lightblue
+        margin-bottom: 0
+
+    > footer
+        .container
+            padding: $margin-base $padding-base #{$margin-base - $grid-gutter-width}
+            font-size: $font-size-large
+
+        .links
+            color: $tbl-green
+
+            a
+                color: inherit
+                text-decoration: none
+                
+                &:hover,
+                &:active
+                    color: inherit
+                    text-decoration: inherit
+
+    > section
+        position: relative
+
+        &.gray
+            text-align: left
+            background-color: $tbl-gray
+            color: $tbl-beige
+
+            h3
+                color: $tbl-lightblue
+                margin-top: $grid-gutter-width
+
+                &:first-child
+                    margin-top: 0
+
+            a,
+            a:hover,
+            a:active
+                color: $tbl-lightblue
+                text-decoration: none
+                
+        
+        &.full
+            min-height: 100vh
+            overflow: hidden
+
+        &#land1,
+        &#land2
+            background-position: center
+            background-size: 1000px 667px
+
+        &#land1
+            background-image: asset_url("motif_landing1_retina.jpg")
+
+            > div
+                color: $tbl-blue
+                position: absolute
+                top: 50%
+                left: 50%
+                margin: 0 auto 140px
+                transform: translate(-50%, -50%)
+                background-color: rgba($tbl-beige, .6)
+                border-radius: $border-radius-base
+                padding: $padding-base
+                width: calc(100% - #{2 * $grid-gutter-width})
+                max-width: 400px
+                font-size: $font-size-large
+
+                h1
+                    font-size: 0
+                    display: block
+                    margin: 0 auto 10px
+
+                    > img
+                        width: 280px
+                        max-width: 100%
+
+                a.next
+                    position: absolute
+                    display: block
+                    height: 40px
+                    width: 40px
+                    bottom: - $margin-base - 40px
+                    left: 50%
+                    margin-left: -20px
+                    background-image: asset_url("arrow_landing1.svg")
+                    background-position: center
+
+            > footer
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                padding: $padding-base
+                // text-shadow: 0 0 5px rgba($tbl-gray, 0.1)
+                font-size: $font-size-small
+                font-family: $circus
+
+        &#land2
+            background-image: asset_url("motif_landing2_retina.jpg")
+            display: flex
+            align-items: center
+            justify-content: center
+            color: $tbl-lightblue
+
+            p
+                font-size: $font-size-extra-large
+
+            a.next
+                display: inline-block
+                height: 40px
+                width: 40px
+                background-image: asset_url("arrow_landing2.svg")
+                background-position: center
+                margin-top: $margin-base
+
+        &#approach
+            background-color: $tbl-blue
+            color: $tbl-beige
+            background-image: asset_url("motif_approach_retina.png")
+            background-size: 400px 713px
+            background-position: top left
+            background-repeat: repeat-y
+
+            h2
+                color: $tbl-lightblue
+
+            .text-container
+                > p
+                    font-size: $font-size-large
+
+            button[data-target="#moreApproach"]
+                margin-top: $margin-base
+
+            #moreApproach
+                text-align: left
+                padding-bottom: $margin-base - $grid-gutter-width
+
+                > div > div.card
+                    h3
+                        color: $tbl-lightblue
+
+        &#services
+            background-color: $tbl-beige
+            background-image: asset_url("motif_services_retina.png")
+            background-size: 400px 705px
+            background-position: top right
+            background-repeat: repeat-y
+
+            h2
+                color: $tbl-green
+
+            .text-container
+                > p
+                    font-size: $font-size-large
+
+            div.buttons
+                padding-top: $margin-base
+                margin-bottom: - $grid-gutter-width
+
+                button
+                    display: inline-block
+                    margin: 0 $grid-gutter-width / 2
+                    margin-bottom: $grid-gutter-width
+
+            .moreServices
+                text-align: left
+                padding-bottom: $margin-base - $grid-gutter-width
+
+                > div > div.card
+                    h3
+                        color: $tbl-green
+
+        &#about-us
+            background-color: $tbl-gray
+            color: $tbl-beige
+
+            h2
+                color: $tbl-blue
+
+                + img
+                    border-radius: 50%
+                    width: 150px
+                    height: 150px
+                    margin-bottom: $padding-base
+
+            h3
+                color: $tbl-lightblue
+
+            div.social-links
+                > a
+                    display: inline-block
+                    font-size: 0
+                    width: 40px
+                    height: 40px
+                    margin: 0 $padding-base / 2 $padding-base
+
+                    &.likn
+                        background-image: asset_url("rs_linkedin.svg")
+
+                    &.mail
+                        background-image: asset_url("rs_mail.svg")
+
+            > footer
+                border-top: 110px solid $tbl-gray
+                background-color: $tbl-lightblue
+                width: 100%
+                text-align: left
+                color: $tbl-gray
+
+                div.row
+                    margin-top: -110px
+
+                    > div
+                        margin-bottom: $margin-base - $grid-gutter-width
+
+                        > div
+                            padding: $grid-gutter-width
+                            background-color: $tbl-lightblue
+                            border-radius: $border-radius-base
+
+                            h3
+                                color: $tbl-blue
+
+        &#contact
+            background-color: $tbl-blue
+            color: $tbl-lightblue
+            background-image: asset_url("motif_landing2_retina.jpg")
+            background-position: center
+            background-size: 1000px 667px
+
+            > .container.marged
+                padding-bottom: $margin-base - $grid-gutter-width
+
+                > h2 + h3
+                    margin-bottom: $margin-base
+
+            .row
+                > div > div.card
+
+                div.card
+                    h3
+                        color: $tbl-lightblue
+
+            .scroll-y
+                color: $tbl-beige
+
+    > div#menu
+        height: 80px
+        text-align: left
+        width: 100%
+
+        &.affix
+            position: relative
+            z-index: 1000
+            
+            > div.main
+                position: fixed
+                top: 0
+                left: 0
+
+            > div.space
+                display: block
+                height: inherit
+
+        > div.space
+            display: none
+
+        > div.main
+            background-color: $tbl-beige
+            width: inherit
+            height: inherit
+
+            > h1
+                height: 100%
+                width: 300px
+                margin: 0
+
+                > a
+                    vertical-align: middle
+                    font-size: 0
+                    display: inline-block
+                    width: inherit
+                    height: inherit
+                    background-image: asset_url("logo_menu.svg")
+                    background-repeat: no-repeat
+                    background-position: center
+
+            > nav
+                height: inherit
+                margin-right: $margin-base / 2
+
+                > a
+                    padding: 0 $margin-base / 2
+                    vertical-align: middle
+                    display: inline-block
+                    height: inherit
+                    line-height: 80px
+                    text-decoration: none
+                    font-size: $font-size-large
+
+                    &:active,
+                    &:hover,
+                    &.active
+                        color: $tbl-blue                
+
+
+                
+
+
+

@@ -1,0 +1,80 @@
+//= MOBILE
+
+@media (max-width: $screen-sm-max)
+
+    a.next
+        display: none!important
+
+    body
+        > div#menu
+            position: relative
+
+            > div.main
+                > h1
+                    width: 260px
+                
+                > a#burger-menu
+                    background-image: asset_url("burgermenu.svg")
+                    background-repeat: no-repeat
+                    background-position: center
+                    display: block
+                    height: 80px
+                    width: 80px
+                    position: absolute
+                    top: 0
+                    right: 0
+
+                > nav
+                    // width: 250px
+                    position: fixed
+                    width: 0
+                    height: 100vh
+                    top: 0
+                    right: - ($margin-base / 2 + 5px)
+                    padding-right: $margin-base / 2 + 5px
+                    background-color: $tbl-beige
+                    text-align: right
+                    margin: 0
+                    overflow: hidden
+                    z-index: 1001
+                    box-shadow: 0 0 6px rgba($tbl-gray, 0.4)
+
+                    > a
+                        display: block
+                        width: 250px - $margin-base / 2
+                        line-height: 40px
+                        height: 40px
+                        padding: 0 $padding-base
+                        font-family: $circus
+                        border-bottom: 1px solid
+                        font-size: $font-size-small
+
+//== DESKTOP
+
+@media (min-width: $screen-md-min)
+
+    #moreApproach
+        div.scroll-y
+            height: 220px
+
+    #moreServices1
+        div.scroll-y
+            height: 200px
+
+    #moreServices2
+        div.scroll-y
+            height: 165px
+
+    #contact
+        div.scroll-y
+            height: 40px
+
+    body
+        > div#menu
+            > div.main
+                > nav
+                    float: right
+
+                > a#burger-menu
+                    display: none
+

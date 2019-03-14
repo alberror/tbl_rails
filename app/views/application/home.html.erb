@@ -1,0 +1,176 @@
+<section id="land1" class="full">
+  <div>
+    <h1>
+      <small class="museo">The</small> Blooming Lab
+      <%= image_tag "logo_landing.svg", alt: nil %>
+    </h1>
+    <%= t('home.subtitle') %>
+    <a class="next" href="#land2"></a>
+  </div>
+  <footer>
+    <%= t('home.land1_footer').html_safe %>
+  </footer>
+</section>
+
+<section id="land2" class="full">
+  <div class="text-container">
+    <h2><%= t('home.land2_title') %></h2>
+    <%= simple_format t('home.land2_content').html_safe %>
+    <a class="next" href="#menu"></a>
+  </div>
+</section>
+
+<%= render 'menu', direct: true %>
+
+<section id="approach">
+  <div class="text-container">
+    <h2><%= t 'home.approach_title' %></h2>
+    <%= simple_format t('home.approach_content') %>
+    <div class="lightblue">
+      <button class="btn btn-blue collapsed" type="button" data-toggle="collapse" data-target="#moreApproach" aria-expanded="false" aria-controls="moreApproach"><%= t 'home.read_more' %></button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="collapse row" id="moreApproach">
+      <div class="col-md-4">
+        <div class="card">
+          <h3><%= t 'home.approach_c1_title' %></h3>
+          <div class="scroll-y">
+            <%= simple_format t('home.approach_c1_content') %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <h3><%= t 'home.approach_c2_title' %></h3>
+          <div class="scroll-y">
+            <%= simple_format t('home.approach_c2_content') %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <h3><%= t 'home.approach_c3_title' %></h3>
+          <div class="scroll-y">
+            <%= simple_format t('home.approach_c3_content') %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="text-container">
+    <h2><%= t 'home.services_title' %></h2>
+    <%= simple_format t('home.services_content') %>
+    <div class="green buttons">
+        <button class="btn btn-green collapsed" type="button" data-toggle="collapse" data-target="#moreServices1" aria-expanded="false" aria-controls="moreServices1"><%= t('home.services_button1').html_safe %></button>
+      <button class="btn btn-green collapsed" type="button" data-toggle="collapse" data-target="#moreServices2" aria-expanded="false" aria-controls="moreServices2"><%= t('home.services_button2').html_safe %></button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="collapse row moreServices" id="moreServices1">
+      <div class="col-md-4">
+        <div class="card">
+          <h3><%= t 'home.services_c1_title' %></h3>
+          <div class="scroll-y">
+            <%= simple_format t('home.services_c1_content') %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <h3><%= t 'home.services_c2_title' %></h3>
+          <div class="scroll-y">
+            <%= simple_format t('home.services_c2_content') %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <h3><%= t 'home.services_c3_title' %></h3>
+          <div class="scroll-y">
+            <%= simple_format t('home.services_c3_content') %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="collapse row moreServices" id="moreServices2">
+      <div class="col-md-6">
+        <div class="card">
+          <h3><%= t 'home.services_c4_title' %></h3>
+          <div class="scroll-y">
+            <%= simple_format t('home.services_c4_content') %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <h3><%= t 'home.services_c5_title' %></h3>
+          <div class="scroll-y">
+            <%= simple_format t('home.services_c5_content') %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about-us">
+  <div class="text-container">
+    <h2><%= t 'home.about_us_title' %></h2>
+    <%= image_tag "clara_lecerf.jpg", alt: nil %>
+    <h3><%= t('home.about_us_title_2').html_safe %></h3>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/claralecerf/" class="likn" target="_blank"></a>
+      <a data-mail="clara" data-domain="thebloominglab.com" class="mail"></a>
+    </div>
+    <%= simple_format t('home.about_us_content') %>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <h3><%= t 'home.expertise_title' %></h3>
+            <%= simple_format t('home.expertise_content') %>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div>
+            <h3><%= t 'home.result_title' %></h3>
+            <%= simple_format t('home.result_content') %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
+
+<section id="contact">
+  <div class="container marged">
+    <h2><%= t 'home.contact_title' %></h2>
+    <h3><%= t 'home.contact_subtitle' %></h3>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <h3><%= t 'home.contact_c1_title' %></h3>
+          <div class="scroll-y">
+            <%= simple_format t('home.contact_c1_content'), {}, sanitize: false %>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <h3><%= t 'home.contact_c2_title' %></h3>
+          <div class="scroll-y">
+            <%= simple_format t('home.contact_c2_content'), {}, sanitize: false %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= render 'footer' %>

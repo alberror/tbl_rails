@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="<%= locale %>">
+  <head>
+    <title>The Blooming Lab | <%= @title || t('site_default_title') %></title>
+    <meta charset="utf-8" />
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <% if @home %>
+    <link rel="alternate" href="<%= root_en_url %>" hreflang="en-US" />
+    <link rel="alternate" href="<%= root_en_url %>" hreflang="en-GB" />
+    <link rel="alternate" href="<%= root_en_url %>" hreflang="en-CA" />
+    <link rel="alternate" href="<%= root_en_url %>" hreflang="en-IE" />
+    <link rel="alternate" href="<%= root_en_url %>" hreflang="en-AU" />
+    <% end %>
+    <%= favicon_link_tag 'favicon.png', type: 'image/png' %>
+    <%= favicon_link_tag 'apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
