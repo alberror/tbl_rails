@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.4.2'
+ruby '2.5.3'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -11,7 +11,7 @@ end
 gem 'rails', '~> 5.1.4'
 # Web Server
 gem 'passenger', '>= 5.0.25', require: 'phusion_passenger/rack_handler'
-gem 'route_translator'
+gem 'route_translator', '~> 5.9'
 
 gem 'jquery-rails'
 # Use SCSS for stylesheets

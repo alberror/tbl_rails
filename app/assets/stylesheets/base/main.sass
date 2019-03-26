@@ -3,7 +3,7 @@
 .museo
     font-family: $museo
 
-.circus    
+.circus
     font-family: $circus
 
 .lightblue
@@ -56,14 +56,14 @@ p
 
 .btn-blue
     +button-variant($tbl-lightblue, $tbl-blue, $tbl-lightblue)
-    
+
     &.collapsed
         color: $tbl-lightblue
         +button-variant($tbl-blue, $tbl-lightblue, $tbl-lightblue)
 
 .btn-green
     +button-variant($tbl-green, $tbl-beige, $tbl-green)
-    
+
     &.collapsed
         color: $tbl-beige
         +button-variant($tbl-beige, $tbl-green, $tbl-green)
@@ -77,10 +77,10 @@ p
     p
         font-size: $font-size-base
 
-    a 
+    a
         color: $tbl-beige
         text-decoration: none
-        
+
         &:hover,
         &:active
             color: inherit
@@ -128,7 +128,7 @@ body
             a
                 color: inherit
                 text-decoration: none
-                
+
                 &:hover,
                 &:active
                     color: inherit
@@ -154,8 +154,8 @@ body
             a:active
                 color: $tbl-lightblue
                 text-decoration: none
-                
-        
+
+
         &.full
             min-height: 100vh
             overflow: hidden
@@ -369,7 +369,7 @@ body
         &.affix
             position: relative
             z-index: 1000
-            
+
             > div.main
                 position: fixed
                 top: 0
@@ -418,10 +418,51 @@ body
                     &:active,
                     &:hover,
                     &.active
-                        color: $tbl-blue                
-
-
-                
+                        color: $tbl-blue
 
 
 
+    //== CAROUSEL OVERRIDE
+    #partners
+        min-height: 450px
+    #partners-carousel
+        font-size: 15px
+
+    .partners-picture
+        height: 70px
+        width: 200px
+        object-fit: contain
+        margin: 0 auto
+
+    .control-carousel
+        position: absolute
+
+    .left
+        top: 20px
+        left: 150px
+
+    .right
+        top: 20px
+        right: 150px
+
+    .carousel-slide
+        width: 500px
+        margin: 0 auto
+
+    .carousel-title
+        color: $tbl-blue
+
+    .carousel-subtitle
+        color: $tbl-blue
+        margin-top: 20px
+        margin-bottom: 0
+
+    .partners-blockquote
+        margin-top: 20px
+
+    .partners-quote
+        color: $tbl-blue
+        font-style: italic
+        margin-bottom: 0
+
+    .partners-people

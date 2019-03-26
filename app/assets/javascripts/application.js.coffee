@@ -4,6 +4,7 @@
 #= require turbolinks
 #= require bootstrap-sprockets
 
+
 root = exports ? this
 if !root.TBL
     root.TBL = {}
@@ -35,7 +36,7 @@ setMenuFixation = ->
     $('#menu').affix offset:
         top: $('#menu').offset().top
         bottom: null
-    
+
 resetMenuFixation = ->
     $('#menu').data('bs.affix').options.offset.top = $('#menu').offset().top
     $('#menu').affix 'checkPosition'
@@ -101,6 +102,6 @@ init = ->
     $(window).resize ->
         resetMenuFixation()
 
-        
+
 
 $(document).on 'turbolinks:load', init
