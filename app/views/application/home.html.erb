@@ -155,7 +155,7 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Wrapper for slides -->
-        <div class="item carousel-slide">
+        <div class="item active carousel-slide">
           <%= image_tag("partners-lvmh.png", class: "partners-picture") %>
           <div class="partners-project">
             <h5 class="carousel-subtitle"><%= t 'home.partners_title_1' %></h4>
@@ -219,7 +219,7 @@
           </div>
         </div>
 
-        <div class="item active carousel-slide">
+        <div class="item carousel-slide">
           <%= image_tag("partners-beautypartners.png", class: "partners-picture") %>
           <div class="partners-project">
             <h5 class="carousel-subtitle"><%= t 'home.partners_title_3' %></h5>
@@ -333,16 +333,18 @@
       </div>
 
       <!-- Controls -->
-      <a class="control-carousel left" href="#partners-carousel" role="button" data-slide="prev">
-        <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
-        <%= image_tag("arrow.svg", class: "glyphicon glyphicon-chevron-left") %>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="control-carousel right" href="#partners-carousel" role="button" data-slide="next">
-        <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
-        <%= image_tag("arrow.svg", class: "glyphicon glyphicon-chevron-right returned-chevron") %>
-        <span class="sr-only">Next</span>
-      </a>
+      <div class="slides-controls">
+        <a class="control-carousel left" href="#partners-carousel" role="button" data-slide="prev">
+          <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+          <%= image_tag("arrow.svg", class: "glyphicon glyphicon-chevron-left") %>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="control-carousel right" href="#partners-carousel" role="button" data-slide="next">
+          <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+          <%= image_tag("arrow.svg", class: "glyphicon glyphicon-chevron-right returned-chevron") %>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>

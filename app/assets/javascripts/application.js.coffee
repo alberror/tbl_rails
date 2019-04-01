@@ -26,6 +26,31 @@ watchMenuLinks = ->
         closeMenu()
         false
 
+watchPreviousSlide =  ->
+    $('.left').click ->
+        [activeSlide] = $('.active')
+        previousSlide = activeSlide.previousElementSibling
+        [..., lastSlide] = $('.carousel-slide')
+        if previousSlide
+            previousSlide.classList.add 'active'
+            activeSlide.classList.remove 'active'
+        else
+            lastSlide.classList.add 'active'
+            activeSlide.classList.remove 'active'
+
+watchNextSlide = ->
+    $('.right').click ->
+        [activeSlide] = $('.active')
+        nextSlide = activeSlide.nextElementSibling
+        [firstSlide] = $('.carousel-slide')
+        if nextSlide
+            nextSlide.classList.add 'active'
+            activeSlide.classList.remove 'active'
+        else
+            firstSlide.classList.add 'active'
+            activeSlide.classList.remove 'active'
+
+
 noSpam = ->
     $('a[data-mail]').off('click').click ->
         href = 'mailto:' + $(this).data('mail') + '@' + $(this).data('domain')
@@ -93,6 +118,8 @@ init = ->
     TBL.menu = $('#menu > .main > nav')
 
     watchMenuLinks()
+    watchPreviousSlide()
+    watchNextSlide()
     noSpam()
     setMenuFixation()
     reInitBootStrap()
