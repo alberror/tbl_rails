@@ -89,7 +89,6 @@ closeMenu = ->
         reInitBootStrap
         return
 
-
 init = ->
     TBL.menu = $('#menu > .main > nav')
 
@@ -101,7 +100,6 @@ init = ->
 
     $(window).resize ->
         resetMenuFixation()
-
 
 
 $(document).on 'turbolinks:load', init
