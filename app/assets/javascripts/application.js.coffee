@@ -27,7 +27,8 @@ watchMenuLinks = ->
         false
 
 watchPreviousSlide =  ->
-    $('.left').click ->
+    $('.left').click (e) ->
+        e.preventDefault()
         [activeSlide] = $('.active')
         previousSlide = activeSlide.previousElementSibling
         [..., lastSlide] = $('.carousel-slide')
@@ -39,7 +40,8 @@ watchPreviousSlide =  ->
             activeSlide.classList.remove 'active'
 
 watchNextSlide = ->
-    $('.right').click ->
+    $('.right').click (e) ->
+        e.preventDefault()
         [activeSlide] = $('.active')
         nextSlide = activeSlide.nextElementSibling
         [firstSlide] = $('.carousel-slide')
