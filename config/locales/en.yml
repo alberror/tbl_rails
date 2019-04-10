@@ -53,14 +53,14 @@ en:
         approach_c1_title: Brand story
         approach_c1_content: "A clearly defined brand story is the key foundation to your overall strategy. It is about articulating who you are and what you stand for, making it your most valuable asset in everything that you do.\nWe help you uncover that story and ensure that it is embodied in a simple and compelling way."
         approach_c2_title: Product mix
-        approach_c2_content: "The first step in developing a strong product mix is to address some simple but very important questions relative to your target, your product concept and positioning, your distribution strategy, as well as your price policy and business expectations. We guide you all along this process, in order to create your dream product."
+        approach_c2_content: 'The first step in developing a strong product mix is to address some simple but very important questions relative to your target, your product concept and positioning, your distribution strategy, as well as your price policy and business expectations. We guide you all along this process, in order to create your dream product.'
         approach_c3_title: Customer experience
-        approach_c3_content: "The customer will experience the brand through multiple channels online and offline. Each activity of the brand will have a precise role such as brand awareness, customer engagement, drive-to-store or purchase. We are here to make sure that they are all integrated, compelling and convey the brand story and product benefits."
+        approach_c3_content: 'The customer will experience the brand through multiple channels online and offline. Each activity of the brand will have a precise role such as brand awareness, customer engagement, drive-to-store or purchase. We are here to make sure that they are all integrated, compelling and convey the brand story and product benefits.'
 
         services_title: Services
         services_content: "Whether you are a start-up or a manager in a SME or a global company, our process always starts with a preliminary discussion to allow us to understand your brand, your vision, your strengths and the challenges you may face.\nFrom there, according to your needs, we can operate in 2 different ways:\nEither provide strategic recommendations,\nOr act as an out-sourced Marketing Director to coach and empower your&nbsp;team."
-        services_button1: "Marketing consulting<br />services"
-        services_button2: "Marketing coaching<br />and training services"
+        services_button1: 'Marketing consulting<br />services'
+        services_button2: 'Marketing coaching<br />and training services'
         services_c1_title: Brand story
         services_c1_content: "• Brand assessment\n• Brand platform\n• Competitive overview\n• Market adaptation\n• Ad’hoc platforms for external stakeholders"
         services_c2_title: Product mix
@@ -68,13 +68,13 @@ en:
         services_c3_title: Customer experience
         services_c3_content: "• Integrated 360 launch strategy, including Retail / Digital / Media / PR\n• Content and communication strategy\n• Sourcing of partners\n• Design of all assets in partnership with external agencies\n• Retailers / Training / Sales platforms"
         services_c4_title: Marketing coaching
-        services_c4_content: "We act as an out-sourced Marketing Director, to gradually build the marketing expertise of your team. Together, we review fine-tune and elevate, your on going marketing projects. We work across all marketing areas: new product development, market research, brand platforms and product presentations, launch strategy and implementation but also marketing budget and performance / return on investment monitoring."
+        services_c4_content: 'We act as an out-sourced Marketing Director, to gradually build the marketing expertise of your team. Together, we review fine-tune and elevate, your on going marketing projects. We work across all marketing areas: new product development, market research, brand platforms and product presentations, launch strategy and implementation but also marketing budget and performance / return on investment monitoring.'
         services_c5_title: Marketing training
         services_c5_content: "Our academic expertise helps us provide trainings on specific marketing topics such as:\n• Marketing basics\n• Product positioning\n• Branding\n• New product development\n• Sustainable marketing\n• Retail marketing\n• Integrated marketing communication"
 
         about_us_title: About us
-        about_us_title_2: "The founder<br />Clara Lecerf"
-        about_us_content: "Founder Clara Lecerf started her career in the beauty & luxury industry in 2003. She has worked for global leaders such as YSL beauty, Veuve Clicquot, Guerlain or Benefit cosmetics, both in France and the Middle East, handling product innovation, from strategic stage to operational launch. She particularly enjoyed  learning how these iconic Houses were drawing from their cultures & know-how to achieve commercial successes.<br/>After over a decade working for those household names, Clara wanted to personally invest in a new challenge. In 2017, she created The Blooming Lab to bring her expertise to smaller brands. On saturated markets, she helps her clients fully leverage their uniqueness in order to stand out from the competition and connect with customers.<br/>She is also a marketing lecturer in leading universities, both in France and the UAE (ESCP Europe, Paris-Sorbonne Abu Dhabi).<br/>Her background has turned her into an insightful business partner, supporting her clients in defining clear strategies in order to take their brand to the next level."
+        about_us_title_2: 'The founder<br />Clara Lecerf'
+        about_us_content: 'Founder Clara Lecerf started her career in the beauty & luxury industry in 2003. She has worked for global leaders such as YSL beauty, Veuve Clicquot, Guerlain or Benefit cosmetics, both in France and the Middle East, handling product innovation, from strategic stage to operational launch. She particularly enjoyed  learning how these iconic Houses were drawing from their cultures & know-how to achieve commercial successes.<br/>After over a decade working for those household names, Clara wanted to personally invest in a new challenge. In 2017, she created The Blooming Lab to bring her expertise to smaller brands. On saturated markets, she helps her clients fully leverage their uniqueness in order to stand out from the competition and connect with customers.<br/>She is also a marketing lecturer in leading universities, both in France and the UAE (ESCP Europe, Paris-Sorbonne Abu Dhabi).<br/>Her background has turned her into an insightful business partner, supporting her clients in defining clear strategies in order to take their brand to the next level.'
         expertise_title: Our expertise
         expertise_content: "• Brand strategy\n• Product innovation\n• 360 brand experience\n• Digital strategy\n• Influencer marketing\n• Budget & P&L"
         result_title: Our commitment
@@ -84,38 +84,42 @@ en:
         partners_title_1: Project
         partners_title_2: Key market
         partners_title_3: Business partner
+        partners_title_4: Key markets
         partners_s1_content_1: New product strategy for a French distillery
         partners_s1_content_2: Europe
         partners_s1_quote: ‘The Blooming Lab helped us streamline a complex innovation project. Bringing in their expertise has been a true game changer.’
-        partners_s1_people: A. Billat Payet, CEO at Kairos Fortuna
+        partners_s1_people: 'A. Billat Payet, CEO <a href="http://kairosfortuna.com/en/" target="_blank">at Kairos Fortuna</a>'
         partners_s2_content_1: Middle East market overview for a dermo-cosmetic brand
         partners_s2_content_2: Middle-East
         partners_s2_quote: ‘The Blooming Lab’s contribution was professional & efficient. I recommend them for whoever wants to expand in the Middle East.’
-        partners_s2_people: R. Julliand, COO at Laboratoires Embryolisse
+        partners_s2_people: 'R. Julliand, COO <a href="http://embryolisse.com/" target="_blank">at Laboratoires Embryolisse</a>'
         partners_s3_content_1: Adapting international brands’ marketing strategy to the region (Kendo)
         partners_s3_content_2: Middle-East
         partners_s3_quote: ‘The Blooming Lab’s insightful expertise on the beauty market as well as the workshop they led helped us shape our local strategy.’
-        partners_s3_people: S. Ravanas, GM Middle East at Kendo Brands
+        partners_s3_people: 'S. Ravanas, GM Middle East <a href="https://kendobrands.com/" target="_blank">at Kendo Brands</a>'
         partners_s4_content_1: Commercial agent and outsourced field supervising for  beauty brands
         partners_s4_content_2: France
         partners_s4_quote: ‘With our commercial expertise, we support The Blooming Lab’s clients in developing their business in France. Our partnership enables new brands to reach their full potential.’
-        partners_s4_people: G. Levasseur, CEO at The Beauty Partners
+        partners_s4_people: 'G. Levasseur, CEO <a href="http://thebeautypartners.fr/en/" target="_blank">at The Beauty Partners</a>'
         partners_s5_content_1: Clarification of the brand story & Retailer’s deck for a men’s grooming brand
         partners_s5_content_2: France
         partners_s5_quote: By looking at Jean Belgueule’s competition, we highlighted their uniqueness to help them standout within the market.
-        partners_s5_people: C. Lecerf, founder of The Blooming Lab
+        partners_s5_people: 'C. Lecerf, founder of The Blooming Lab - <a href="https://www.jeanbelgueule.com/fr/" target="_blank">Jean Belgueule</a>'
         partners_s6_content_1: Middle-East strategy & Distributor deck for a Halal & Vegan Skincare brand
         partners_s6_content_2: Middle-East
         partners_s6_quote: ‘Collaborating with The Blooming Lab helped us gain a good grasp of the market and fine-tune our distribution & launch strategy’
-        partners_s6_people: F. Chamas, CEO at elline Switzerland
+        partners_s6_people: 'F. Chamas, CEO <a href="https://www.elline-switzerland.com/" target="_blank">at elline Switzerland</a>'
         partners_s7_content_1: Brand platform for a luxury watch brand
         partners_s7_content_2: France, Asia, Middle East
         partners_s7_quote: ‘The Blooming Lab gave us the perspective we needed to strengthen our positioning and elevate our communication strategy.’
-        partners_s7_people: A. Meyer Designer & Co-founder
+        partners_s7_people: 'A. Meyer Designer & Co-founder <a href="http://www.phenomen.fr/en/index.html" target="_blank">at Phenomen</a>'
         partners_s8_content_1: Brand platform for a fragrance brand
         partners_s8_content_2: Europe & Middle-East
         partners_s8_quote: ‘The Blooming Lab clarified our uniqueness and how to express it. Their recommendations were easy to use to brief & convince our partners.’
-        partners_s8_people: M. Rebatchi Founder at Maison Rebatchi
+        partners_s8_people: 'M. Rebatchi Founder <a href="https://www.rebatchi.com/" target="_blank">at Maison Rebatchi</a>'
+        partners_s9_people: 'S. Ravanas, GM Middle East at Kendo Brands - <a href="https://www.marcjacobsbeauty.com/" target="_blank">Marc Jacobs</a>'
+        partners_s10_people: 'S. Ravanas, GM Middle East at Kendo Brands - <a href="https://www.katvondbeauty.com/" target="_blank">Kat Von D</a>'
+        partners_s11_people: 'S. Ravanas, GM Middle East at Kendo Brands - <a href="https://www.fentybeauty.com/" target="_blank">Fenty Beauty</a>'
 
         contact_title: Contact
         contact_subtitle: Get in touch
