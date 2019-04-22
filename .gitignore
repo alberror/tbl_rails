@@ -20,3 +20,4 @@
 server.sh
 passenger.3000.pid
 passenger.3000.pid.lock
+app/assets/images/.DS_Store
